@@ -26,7 +26,7 @@ SVD_OVERSAMPLE="${SVD_OVERSAMPLE:-16}"
 SVD_NITER="${SVD_NITER:-2}"
 SEED="${SEED:-0}"
 
-python -m alpharl.checkpoint_reconstruction \
+python alpharl/checkpoint_reconstruction.py \
   --base-model-path "$BASE" \
   --trained-model-path "$FULL" \
   --output-path "$OUT" \
